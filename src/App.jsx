@@ -12,7 +12,6 @@ const App = () => {
         <div className="app">
             <Topbar />
             <div className="sections">
-                <p>asdasdasdas</p>
                 <Intro />
                 <Portfolio />
                 <Projects />

@@ -7,11 +7,18 @@
         background-color: lightcoral;
         position: relative;
         top: 70px;
-        
+        scroll-snap-type: y mandatory;
+        scrollbar-width: none; // Firefox
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        scroll-behavior: smooth;
+
         //Para todos los elementos dentro de sections
         > * {
             width: 100%;
             height: calc(100vh - 70px);
+            scroll-snap-align: start;
         }
     }
 }
