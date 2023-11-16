@@ -9,7 +9,8 @@
     color: #222;
     position: fixed;
     top: 0;
-    z-index: 2; //para poder mostrar el topbar delante de lo demas
+    z-index: 3; //para poder mostrar el topbar delante de lo demas
+    transition: all 1s ease;
 
     .wrapper {
         padding: 10px 30px;
@@ -53,11 +54,35 @@
                 flex-direction: column;
                 justify-content: space-between;
                 cursor: pointer;
+                overflow: hidden;
 
                 span {
                     width: 100%;
                     height: 3px;
                     background-color: $primaryColor;
+                    transform-origin: left;
+                    transition: all 2s ease;
+                }
+            }
+        }
+    }
+
+    &.active{
+        background-color: $primaryColor;
+        color: white;
+
+        .hamburger {
+            span {
+                &:first-child {
+                    background-color: white;
+                    transform: rotate(45deg);
+                }
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+                &:last-child {
+                    background-color: white;
+                    transform: rotate(-45deg);
 
                 }
             }

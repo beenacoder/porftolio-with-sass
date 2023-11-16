@@ -4,9 +4,9 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 import './topbar.scss'
 
-const Topbar = () => {
+const Topbar = ({openMenu, setOpenMenu}) => {
     return (
-        <div className='topbar' id="topbar">
+        <div className={`topbar ${openMenu && 'active'}`} id="topbar ">
             <div className="wrapper">
                 <div className="left">
                     <a href="#intro" className='logo'>LOGO</a>
@@ -21,7 +21,7 @@ const Topbar = () => {
                 </div>
 
                 <div className="right">
-                    <div className="hamburger">
+                    <div className="hamburger" onClick={() => setOpenMenu(!openMenu)}>
                         <span className='line1'></span>
                         <span className='line2'></span>
                         <span className='line3'></span>
