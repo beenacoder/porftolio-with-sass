@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Topbar from "./components/topbar/Topbar";
-import Intro from "./components/Intro/Intro";
+import Intro from "./components/intro/Intro";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Projects from "./components/Projects/Projects";
 import Certificates from "./components/Certificates/Certificates";
@@ -17,9 +17,9 @@ const App = () => {
             <Menu openMenu={openMenu} setOpenMenu={setOpenMenu}/>
             <div className="sections">
                 <Intro />
-                <Portfolio />
-                <Projects />
+                {/* <Projects /> */}
                 <Certificates />
+                <Portfolio />
                 <Contact />
             </div>
         </div>

@@ -25,9 +25,9 @@ const Intro = () => {
             </div>
             <div className="right">
                 <div className="wrapper">
-                    <h2>Saludos! Soy</h2>
+                    <h2>Hola! Mi nombre es</h2>
                     <h1>Ariel Cabeza</h1>
-                    <h3>Fullstack <span ref={textRef}></span></h3>
+                    <h3>Soy un Fullstack <span ref={textRef}></span></h3>
                 </div>
                 <a href="#portfolio">
                     <img src="assets/down.png" alt="" />

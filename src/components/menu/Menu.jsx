@@ -7,14 +7,14 @@ const Menu = ({openMenu, setOpenMenu}) => {
             <li onClick={() => setOpenMenu(false)}>
                 <a href="#intro">Inicio</a>
             </li>
-            <li onClick={() => setOpenMenu(false)}>
-                <a href="#portfolio">Introducción</a>
-            </li>
-            <li onClick={() => setOpenMenu(false)}>
+            {/* <li onClick={() => setOpenMenu(false)}>
                 <a href="#projects">Proyectos</a>
-            </li>
+            </li> */}
             <li onClick={() => setOpenMenu(false)}>
                 <a href="#certificates">Certificados</a>
+            </li>
+            <li onClick={() => setOpenMenu(false)}>
+                <a href="#portfolio">Portfolio</a>
             </li>
             <li onClick={() => setOpenMenu(false)}>
                 <a href="#contact">Contáctame</a>
