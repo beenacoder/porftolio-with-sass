@@ -4,3 +4,12 @@ $thirdColor: #ECF87F;
 $fourthColor: #59981A;
 $fifthColor: #DBA40E;
 $sixthColor: #7E6E13;
+$seventhColor: #978c50;
+
+$width: 768px;
+
+@mixin mobile {
+    @media (max-width: #{$width}){
+        @content 
+    }
+}

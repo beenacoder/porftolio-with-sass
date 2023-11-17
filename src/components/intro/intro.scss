@@ -4,6 +4,10 @@
 .intro {
     background-color: $fifthColor;
     display: flex;
+    @include mobile {
+        flex-direction: column;
+        align-items: center;
+    }
 
     .left {
         flex: 0.5;
@@ -19,8 +23,15 @@
             justify-content: center;
             float: right;
 
+            @include mobile {
+                align-items: flex-start;
+            }
+
             img {
                 height: 90%;
+                @include mobile {
+                    height: 62%;
+                }
             }
         }
     }
@@ -35,16 +46,32 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            @include mobile {
+                padding-left: 0;
+                align-items: center;
+            }
 
             h1 {
                 font-size: 60px;
                 margin: 10px 0;
+
+                @include mobile {
+                    font-size: 40px;
+                }
             }
             h2 {
                 font-size: 35px;
+
+                @include mobile {
+                    font-size: 25px;
+                }
             }
             h3 {
                 font-size: 30px;
+
+                @include mobile {
+                    font-size: 20px;
+                }
 
                 span {
                     color: crimson;
@@ -70,6 +97,10 @@
             img {
                 width: 50px;
                 animation: blink 1.5s infinite;
+
+                @include mobile {
+                    display: none;
+                }
             }
             @keyframes blink {
                 100% {

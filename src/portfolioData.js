@@ -52,22 +52,31 @@ export const portfolioData = [
 export const certifData = [
     {
         id: 1,
-        imgUrl: "assets/certificates/certifPilar.png",
-        title: "Desarrollador M.E.R.N",
-        description: "Curso intensivo del stack M.E.R.N (Mongo, Express, React, Node"
+        imgUrl: "assets/certificates/javascript.png",
+        title: "Desarrollador Javascript",
+        description: "Arrays, Iteraciones, ES6, desestructuraciones, metodos slice, sort, filter,includes, find, map, validaciones, eventos, DOM, consumo de APIS.",
+        place: "CODERHOUSE"
     },
     {
         id: 2,
-        imgUrl: "assets/certificates/certifPilar.png",
-        title: "Desarrollador M.E.R.N",
-        description: "Curso intensivo del stack M.E.R.N (Mongo, Express, React, Node",
-        featured: true
+        imgUrl: "assets/certificates/react.png",
+        title: "Desarrollador React Js",
+        description: "Componentes de clase, funcionales y ciclo de vida, manejo de estados, hooks, react redux, context api, manejo de APIscon fetch y axios.",
+        place: "CODERHOUSE",
     },
     {
         id: 3,
         imgUrl: "assets/certificates/certifPilar.png",
         title: "Desarrollador M.E.R.N",
-        description: "Curso intensivo del stack M.E.R.N (Mongo, Express, React, Node"
+        description: "Curso intensivo del stack M.E.R.N (Mongo, Express, React, Node).",
+        place: "Polo Tecnológico de La Rioja"
+    },
+    {
+        id: 4,
+        imgUrl: "assets/certificates/auxTeclab.png",
+        title: "Auxiliar en Programación",
+        description: "Titulo intermedio de la Tecnicatura Superior en Programación",
+        place: "Instituto Superior TECLAB",
     },
    
-]
+]//
